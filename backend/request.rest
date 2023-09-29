@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+Authorization: Bearer 
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : " M ilham gengs",
+    "email" : "email2@gmail.com",
+    "password" : "1234566",
+    "confPassword" : "1234566"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email2@gmail.com",
+    "password": "1234566"
+}
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE  http://localhost:5000/logout
+
+
+
